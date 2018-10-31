@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>pizza</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA7f2zV8bb3yQ9pYF6cXyLvGJrmMfZOmds",
+      authDomain: "pizzaweb-f6547.firebaseapp.com",
+      databaseURL: "https://pizzaweb-f6547.firebaseio.com",
+      projectId: "pizzaweb-f6547",
+      storageBucket: "pizzaweb-f6547.appspot.com",
+      messagingSenderId: "785131126454"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but pizza doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
