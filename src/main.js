@@ -6,7 +6,7 @@ import store from './store'
 Vue.config.productionTip = false
 
 //配置url
-axios.defaults.baseURL = 'https://pizzaweb-f6547.firebaseio.com/'
+axios.defaults.baseURL = 'https://wd3160611847cyelke.wilddogio.com/'
 //全局配置axios
 Vue.prototype.Axios = axios
 

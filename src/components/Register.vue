@@ -56,8 +56,11 @@ export default {
                 password:this.password,
                 confirmPassword:this.confirmPassword
               }
-             this.$axios.post('/users.json',formData)
-                  .then(res => this.$router.push({name:'loginLink'}))
+              console.log(formData)
+             this.Axios.post('/users.json',formData)
+                  .then(res => 
+                    this.$router.push({name:'loginLink'})
+                  )
         }else{
           alert("两次密码不一致!")
         }

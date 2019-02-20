@@ -44,7 +44,7 @@ export default {
     }
   },
   created() {
-    this.Axios.get("https://pizzaweb-f6547.firebaseio.com/menu.json")
+    this.Axios.get("https://wd3160611847cyelke.wilddogio.com/menu.json")
       .then(res => {
         
       })
@@ -60,10 +60,11 @@ export default {
   },
   methods: {
     deleteData(item) {
-      // console.log(item)
-      this.Axios.delete("https://pizzaweb-f6547.firebaseio.com/menu/" + item.id + "/.json")
+      console.log(item)
+      this.Axios.delete("https://wd3160611847cyelke.wilddogio.com/menu/" + item.id + "/.json")
         .then(res => {
           // this.$store.commit('removeMenuItems',itme)
+          console.log(res)
           this.$router.push({ name: "menuLink" });
         })
     }

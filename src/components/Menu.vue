@@ -61,7 +61,6 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
   export default{
     data(){
       return{
@@ -88,7 +87,7 @@ import axios from 'axios'
     methods:{
       fetchData(){
         let that = this;
-        this.Axios.get('https://pizzaweb-f6547.firebaseio.com/menu.json')
+        this.Axios.get('https://wd3160611847cyelke.wilddogio.com/menu.json')
             .then(function (res) {
               // console.log(res.data);
               that.$store.commit("setMenuItems",res.data)
